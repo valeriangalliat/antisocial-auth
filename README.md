@@ -1,5 +1,4 @@
-antisocial-auth
-===============
+# antisocial-auth [![npm version](http://img.shields.io/npm/v/antisocial-auth.svg?style=flat-square)](https://www.npmjs.org/package/antisocial-auth)
 
 > Social authentication for websites that don't provide any.
 
