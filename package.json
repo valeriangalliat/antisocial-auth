@@ -1,0 +1,37 @@
+{
+  "name": "antisocial-auth",
+  "version": "1.0.0",
+  "description": "Social authentication for websites that don't provide any.",
+  "homepage": "https://github.com/valeriangalliat/antisocial-auth",
+  "license": {
+    "type": "Unlicense",
+    "url": "http://unlicense.org/"
+  },
+  "author": {
+    "name": "Valérian Galliat",
+    "url": "http://val.codejam.info/"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "UNLICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/valeriangalliat/antisocial-auth.git"
+  },
+  "dependencies": {
+    "babel-runtime": "^4.5.0",
+    "bind-late": "^1.0.1",
+    "es6-denodeify": "^0.1.1",
+    "string": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel": "^4.5.0"
+  },
+  "scripts": {
+    "build": "babel src --out-dir .",
+    "prepublish": "$npm_package_scripts_build",
+    "test": "$npm_package_scripts_build && node test.js"
+  }
+}
