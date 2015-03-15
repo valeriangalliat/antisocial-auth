@@ -1,6 +1,6 @@
 {
   "name": "antisocial-auth",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Social authentication for websites that don't provide any.",
   "homepage": "https://github.com/valeriangalliat/antisocial-auth",
   "license": {
