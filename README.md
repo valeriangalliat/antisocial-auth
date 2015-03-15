@@ -135,3 +135,10 @@ app.get('/', (req, res) => {
   // ...
 })
 ```
+
+Example
+-------
+
+See [jvc-auth] for a practical usage example.
+
+[jvc-auth]: https://github.com/valeriangalliat/jvc-auth
