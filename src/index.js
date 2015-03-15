@@ -11,11 +11,11 @@ export default bindLate({
 
     // Hard wrap text to given width.
     wrap: width => text =>
-      text.replace(RegExp(`(.{1,${width}})`, 'g'), '$1\n'),
+      text.replace(RegExp(`(.{1,${width}})`, 'g'), '$1\n').trim(),
 
     // Wrap text with begin and end tags.
     decorate: (beginTag, endTag) =>
-      text => `${beginTag}\n${text}${endTag}\n`,
+      text => `${beginTag}\n${text}\n${endTag}`,
 
     // Find text between begin and end tags.
     find: (beginTag, endTag) =>
