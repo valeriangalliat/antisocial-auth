@@ -27,7 +27,8 @@
     "string": "^3.0.0"
   },
   "devDependencies": {
-    "babel": "^4.5.0"
+    "babel": "^4.5.0",
+    "promise-done": "^1.0.0"
   },
   "scripts": {
     "build": "babel src --out-dir .",
