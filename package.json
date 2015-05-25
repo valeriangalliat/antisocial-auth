@@ -3,10 +3,7 @@
   "version": "1.0.2",
   "description": "Social authentication for websites that don't provide any.",
   "homepage": "https://github.com/valeriangalliat/antisocial-auth",
-  "license": {
-    "type": "Unlicense",
-    "url": "http://unlicense.org/"
-  },
+  "license": "Unlicense",
   "author": {
     "name": "Valérian Galliat",
     "url": "http://val.codejam.info/"
