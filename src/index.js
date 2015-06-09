@@ -36,7 +36,7 @@ export default bindLate({
 
     // Check given time against expiration delay.
     checkTime: expirationTime =>
-      time => (Date.now() - time) < expirationTime,
+      time => (Date.now() - time) < expirationTime
   },
 
   display: {
@@ -49,7 +49,7 @@ export default bindLate({
     decode: _ => _.core.decode(_.display.encoding),
     wrap: _ => _.core.wrap(_.display.wrapWidth),
     decorate: _ => _.core.decorate(_.display.beginTag, _.display.endTag),
-    find: _ => _.core.find(_.display.beginTag, _.display.endTag),
+    find: _ => _.core.find(_.display.beginTag, _.display.endTag)
   },
 
   // Sice of the random identification nonce.
@@ -63,13 +63,13 @@ export default bindLate({
   beautify: _ => _.core.beautify({
     decorate: _.display.decorate,
     wrap: _.display.wrap,
-    encode: _.display.encode,
+    encode: _.display.encode
   }),
 
   uglify: _ => _.core.uglify({
     decode: _.display.decode,
-    find: _.display.find,
+    find: _.display.find
   }),
 
-  checkTime: _ => _.core.checkTime(_.expirationTime),
+  checkTime: _ => _.core.checkTime(_.expirationTime)
 })
