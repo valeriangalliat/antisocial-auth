@@ -25,11 +25,13 @@
   },
   "devDependencies": {
     "babel": "^4.5.0",
-    "promise-done": "^1.0.0"
+    "promise-done": "^1.0.0",
+    "standard": "^4.0.1"
   },
   "scripts": {
     "build": "babel src --out-dir .",
-    "prepublish": "$npm_package_scripts_build",
-    "test": "$npm_package_scripts_build && node test.js"
+    "lint": "cd src && standard",
+    "prepublish": "npm run build",
+    "test": "npm run lint && npm run build && node test.js"
   }
 }
