@@ -17,6 +17,12 @@
     "type": "git",
     "url": "https://github.com/valeriangalliat/antisocial-auth.git"
   },
+  "scripts": {
+    "build": "babel src --out-dir .",
+    "lint": "cd src && standard",
+    "prepublish": "npm run build",
+    "test": "npm run lint && npm run build && node test.js"
+  },
   "dependencies": {
     "babel-runtime": "^4.5.0",
     "bind-late": "^1.0.1",
@@ -27,11 +33,5 @@
     "babel": "^4.5.0",
     "promise-done": "^1.0.0",
     "standard": "^4.0.1"
-  },
-  "scripts": {
-    "build": "babel src --out-dir .",
-    "lint": "cd src && standard",
-    "prepublish": "npm run build",
-    "test": "npm run lint && npm run build && node test.js"
   }
 }
